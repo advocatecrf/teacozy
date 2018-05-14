@@ -9,7 +9,8 @@ html {
 
 .container {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* Navigation Bar Styles  */
@@ -40,9 +41,9 @@ nav a {
 .Jumbotron {
   background-image: url(./images/img-mission-background.jpg);
   height: 700px;
-  max-width: 1200px;
+  width: 1200px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: stretch;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
@@ -57,9 +58,32 @@ nav a {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .mission h2,
   h4 {
   margin: 10px;
+}
+
+/* What's Brewing Flex Boxes */
+
+.square img {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.flexsquares {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  margin: 20px 15px;
+}
+
+.menu {
+  width: 1000px;
 }
